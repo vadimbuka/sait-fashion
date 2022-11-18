@@ -128,16 +128,23 @@
     flex-wrap: wrap;
 }
 
+.col-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .small-card {
     margin-top: 0;
     margin-right: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     margin-left: 15px;
 
     flex: 0 0 calc(50% - 30px);
 
     display: flex;
     flex-direction: column;
+
+    box-shadow: 0 1px 1px 0 #B1B1B1;
 }
 
 .heading {
@@ -151,7 +158,7 @@
     font-size: 12px;
 }
 
-.post-head {
+.small-card .post-head {
     width: 285px;
     margin: 0 auto;
     font-family: 'PT Serif', serif;
@@ -163,7 +170,7 @@
     text-decoration: none;
 }
 
-.information-about {
+.small-card .information-about {
     margin: 10px auto 14px;
     color: #666666;
     font-family: 'PT Serif', serif;
@@ -178,8 +185,55 @@
     margin-left: 10px;
 }
 
-.information-about a::before {
+.information-about .post-author::before {
     content: "By";
     color: #B1B1B1;
     margin-right: 3px;
+}
+
+.big-card {
+    margin-right: 15px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    box-shadow: 0 1px 1px 0 #B1B1B1;
+}
+
+
+.big-card-block {
+    display: flex;
+    padding: 10px 30px 25px 30px;
+
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.post-head-block {
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+.big-card .post-head {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #171717;
+    text-decoration: none;
+}
+
+.big-card .information-about {
+    margin-bottom: 14px;
+    color: #666666;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.big-card .description {
+    width: 614px;
+    font-family: 'PT Serif', serif;
+    color: #666666;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
 }
