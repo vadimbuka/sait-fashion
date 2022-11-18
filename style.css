@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+
 * {
     box-sizing: border-box;
 }
 
 .header {
-
     background-color: #F2F2F2;
 }
 
@@ -15,4 +17,37 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.menu > ul {
+    display: flex;
+}
+
+.menu > ul > li a {
+    margin-left: 40px;
+    text-decoration: none;
+
+    color: #171717;
+}
+
+.menu > ul > li a:hover {
+    color: #C9A96E;   
+}
+
+.slide {
+    height: 700px;
+    background-image: url("img/main-image.png");
+    position: relative;
+}
+
+.text-in-slide {
+    color: #fff;
+    position: absolute;
+    bottom: 60px;
+    left: 375px;
+}
+
+.top-text-in-slide {
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
 }
