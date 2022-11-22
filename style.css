@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+h3 {
+    text-align: center;
 }
 
 .header {
@@ -122,6 +130,7 @@
     flex: 0 0 33.33333%;
     min-width: 33.33333%;
     height: 200px;
+    padding-left: 115px;
 }
 
 .col {
@@ -144,14 +153,15 @@
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 
-    box-shadow: 0 1px 1px 0 #B1B1B1;
+    box-shadow: 0 0 3px 0 #B1B1B1;
+    background-color: #fff;
 }
 
 .heading {
     margin-top: 15px;
     margin-bottom: 4px;
-    text-align: center;
     color: #C9A96E;
     text-transform: uppercase;
     font-family: 'PT Serif', serif;
@@ -167,12 +177,12 @@
     font-size: 20px;
     line-height: 28px;
     color: #171717;
-    text-align: center;
     text-decoration: none;
+    text-align: center;
 }
 
-.small-card .information-about {
-    margin: 10px auto 14px;
+.information-about {
+    margin: 10px 10px 14px;
     color: #666666;
     font-family: 'PT Serif', serif;
     font-weight: 400;
@@ -196,7 +206,8 @@
     margin-right: 15px;
     margin-bottom: 30px;
     margin-left: 15px;
-    box-shadow: 0 1px 1px 0 #B1B1B1;
+    box-shadow: 0 0 3px 0 #B1B1B1;
+    background-color: #fff;
 }
 
 
@@ -230,8 +241,11 @@
     font-size: 12px;
 }
 
-.big-card .description {
+.big-card-block .descr-sans-14 {
     width: 614px;
+}
+
+.descr-sans-14 {
     font-family: 'PT Serif', serif;
     color: #666666;
     font-weight: 400;
@@ -310,4 +324,114 @@
     background-size: 7px 12px;
     right: -15px;
     top: 3px;
+}
+
+.right-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.click-block {
+    width: 270px;
+    height: 50px;
+    border: 1px solid #E5E5E5;
+    margin-bottom: 15px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.click-block a {
+    text-decoration: none;
+    color: #171717;
+    width: 100%;
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+}
+
+.right-top-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    margin-bottom: 70px;
+
+    box-shadow: 0 0 3px 0 #B1B1B1;
+    background-color: #fff;
+}
+
+.right-post-author {
+    color: #171717;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
+    line-height: 21.2px;
+    font-weight: 700;
+}
+
+.right-author-prof {
+    color: #B1B1B1;
+    font-family: 'PT Serif', serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.right-top-block .descr-sans-14 {
+    text-align: center;
+    margin-bottom: 14px;
+    padding: 0 18px;
+}
+
+.continue-reading {
+    border-top: 1px solid #E5E5E5;
+    width: 100%;
+    height: 36px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.continue-reading a {
+    font-family: 'PT Serif', serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #C9A96E;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.right-small-card {
+    width: 270px;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0 0 3px 0 #B1B1B1;
+    background-color: #fff;
+}
+
+.right-small-card h3 {
+    margin: 0 10px;
+}
+
+.right-small-card .post-head {
+    width: 285px;
+    margin: 0 auto;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #171717;
+    text-decoration: none;
 }
