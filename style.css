@@ -494,5 +494,21 @@ h3 {
 }
 
 .tags-block {
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin-top: 20px;
+}
+
+.tag {
+    padding: 6px 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18.55px;
+    color: #666666;
+    background-color: #F8F9FA;
 }
