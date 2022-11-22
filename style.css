@@ -29,6 +29,26 @@ h3 {
     align-items: center;
 }
 
+.logo {
+    position: relative;
+}
+
+.logo::after {
+    content: "";
+    display: block;
+    width: 125px;
+    height: 6px;
+    position: absolute;
+    left: 0%;
+    right: 2.34%;
+    top: 68.75%;
+    bottom: 12.5%;
+
+    background: #C9A96E;
+    mix-blend-mode: normal;
+    opacity: 0.35;
+}
+
 .menu > ul {
     display: flex;
 }
@@ -538,3 +558,4 @@ h3 {
 .photo-slide img {
     width: Calc(16.66667% - 10px);
 }
+
