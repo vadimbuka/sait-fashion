@@ -123,7 +123,7 @@ h3 {
 .posts {
     flex: 0 0 66.66667%;
     min-width: 66.66667%;
-    height: 200px;
+    /* height: 200px; */
 }
 
 .right-block {
@@ -257,7 +257,7 @@ h3 {
     width: 508px;
     height: 50px;
     border: 1px solid #E5E5E5;
-    margin: 30px auto;
+    margin: 30px auto 80px;
 }
 
 .pages-flex {
@@ -511,4 +511,30 @@ h3 {
     line-height: 18.55px;
     color: #666666;
     background-color: #F8F9FA;
+}
+
+.insta-block {
+    width: 100%;
+    text-align: center;
+}
+
+.insta-block h2 {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #171717;
+}
+
+.photo-slide {
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 80px;
+    margin-left: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo-slide img {
+    width: Calc(16.66667% - 10px);
 }
